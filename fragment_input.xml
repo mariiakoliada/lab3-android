@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/editQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введіть питання"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Складність:"
+        android:layout_marginTop="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/groupDifficulty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbLow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Низька"/>
+
+        <RadioButton
+            android:id="@+id/rbMed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Середня"/>
+
+        <RadioButton
+            android:id="@+id/rbHigh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Висока"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Тип завдання:"
+        android:layout_marginTop="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/groupType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbTheory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Теорія"/>
+
+        <RadioButton
+            android:id="@+id/rbPractice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Практика"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="ОК"
+        android:backgroundTint="#7E57C2"/>
+
+    <Button
+        android:id="@+id/btnOpen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Відкрити"
+        android:backgroundTint="#9575CD"/>
+
+</LinearLayout>
